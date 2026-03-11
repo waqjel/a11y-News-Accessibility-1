@@ -1,2 +1,2 @@
-# a11y-News-Accessibility-1
+# sjpi-accessibility-1
 May day, May day - help me save the site!

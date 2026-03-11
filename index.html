@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11y News - Your Accessible News Source</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <span class="logo-icon" aria-hidden="true">📰</span>
+                <span class="site-title">A11y News</span>
+            </div>
+
+            <section class="search-section">
+                <form action="/search" method="GET" class="search-form" role="search">
+                    <label for="site-search" class="visually-hidden">Search News Articles</label>
+                    <div class="input-group">
+                        <input type="search" id="site-search" name="q" placeholder="Search news...">
+                        <button type="submit" aria-label="Submit Search">Search</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <nav class="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" id="main-content">
+        <h1>Latest Headlines</h1>
+
+        <article class="article">
+            <h2>Breaking News: New deep-sea fish discovered</h2>
+            <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The unnamed species is believed to have unique traits that could contribute to future medical research and biotechnology.</p>
+            <a href="#" class="read-more" aria-label="Read more about the new deep-sea fish discovery">Read full article</a>
+        </article>
+
+        <article class="article">
+            <h2>Gallery</h2>
+            <div class="image-grid">
+                <img src="/images/ocean.jpg" alt="A deep blue ocean with small waves">
+                <img src="/images/city.jpg" alt="A vibrant city skyline lit up at night">
+                <img src="/images/family.jpg" alt="A family walking through a sunny green park">
+            </div>
+            <p>Explore our latest photo reports above.</p>
+        </article>
+
+        <article class="article">
+            <h2>Video: Wonders of Nature</h2>
+            <div class="video-wrapper">
+                <video controls src="https://www.w3schools.com/html/mov_bbb.mp4" width="100%">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 A11y News Project</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
