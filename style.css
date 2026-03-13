@@ -188,6 +188,11 @@ h2 {
 .image-grid img:hover {
   transform: scale(1.02);
 }
+video.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
 footer {
   text-align: center;
