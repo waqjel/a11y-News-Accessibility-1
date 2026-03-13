@@ -132,9 +132,9 @@ input[type="search"] {
 /* Main Content  */
 .container {
   max-width: 900px;
-  margin: 3rem auto;
+  margin: 1rem auto;
   background: var(--white);
-  padding: 3rem;
+  padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
